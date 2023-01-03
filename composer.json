@@ -1,0 +1,29 @@
+{
+    "name": "fgarioli/s3_uploader",
+    "type": "project",
+    "require": {
+        "aws/aws-sdk-php": "^3.255",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^6.2",
+        "monolog/monolog": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fgarioli\\S3Uploader\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fgarioli\\S3Uploader\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fernando Garioli",
+            "email": "f.ribeirogarioli@gmail.com"
+        }
+    ]
+}
