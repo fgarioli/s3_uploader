@@ -43,7 +43,7 @@ class Uploader
     public function upload(string $directory, string $bucketName): void
     {
         foreach (scandir($directory) as $file) {
-            if ($file === '.' || $file === '..') {
+            if (in_array($file, ['.', '..', '.gitkeep'])) {
                 continue;
             }
 
